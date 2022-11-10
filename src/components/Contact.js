@@ -23,23 +23,23 @@ const Contact = () => {
       </div>
       <div className="bg-purple-800 p-8 ">
         <div className="container mx-auto">
-          <form >
+          <form action="mailto:gregorymark254@gmail.com" method="post">
             <div className="grid md:grid-cols-2 gap-3">
               <div>
                   <label className="text-white dark:text-gray-200">First Name</label>
-                  <input type="text" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
+                  <input type="text" name="fname" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
               </div>
               <div>
                   <label className="text-white dark:text-gray-200" >Last Name</label>
-                  <input type="text" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
+                  <input type="text" name="lname" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
               </div>
               <div>
                   <label className="text-white dark:text-gray-200">Email</label>
-                  <input type="email" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
+                  <input type="email" name="email" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
               </div>
               <div>
                   <label className="text-white dark:text-gray-200">Subject</label>
-                  <input type="text" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
+                  <input type="text" name="subject" required className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"/>
               </div>
               <div className="col-span-2">
                 <label className="text-white  dark:text-gray-200">Message</label>
@@ -47,7 +47,7 @@ const Contact = () => {
               </div><br />
             </div>
             <div className=" flex justify-center">
-              <button className="px-8 py-2  leading-5 text-white transition-colors duration-200 transform bg-pink-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Submit</button>
+              <button type="submit" className="px-8 py-2  leading-5 text-white transition-colors duration-200 transform bg-pink-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Submit</button>
             </div>
           </form>
         </div>
